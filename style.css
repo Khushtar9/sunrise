@@ -1,5 +1,4 @@
-/* Fullscreen layout with smooth background fade */
-  body, html {
+body, html {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -13,7 +12,7 @@
       bottom: 0;
       width: 100%;
       height: 200px;
-      z-index: 5; /* Make sure it’s above background/sun/cloud layers */
+      z-index: 5;
       pointer-events: none;
     }
     
@@ -99,7 +98,6 @@
   filter: blur(1px);
 }
 
-/* Individual fluffy cloud styles */
 .cloud1 {
   width: 280px; height: 170px;
   left: 0%; bottom: 0px;
@@ -228,19 +226,3 @@
   .indigo { border-top-color: indigo; top: 60px; }
   .violet { border-top-color: violet; top: 72px; }
   
-
-
-    button:hover {
-      background-color: darkorange;
-    }
-    
-    
-    
-    
-    /* Bird/cloud floating effect */
-    @keyframes float {
-      0% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(20px) translateY(-10px); }
-      100% { transform: translateX(0) translateY(0); }
-    }
-    
